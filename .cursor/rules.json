@@ -1,0 +1,18 @@
+{
+  "projectName": "Rails 8 Articles API",
+  "aiVerbosity": "concise",
+  "linting": "rubocop",
+  "formatting": "standardrb",
+  "extensions": ["solid_queue", "solid_cable", "solid_cache"],
+  "frameworks": {
+    "railsVersion": "8",
+    "testingTool": "rspec"
+  },
+  "backgroundJobs": {
+    "queueSystem": "solid_queue"
+  },
+  "cacheSettings": {
+    "type": "solid_cache",
+    "expirationTimeInSeconds": 3600
+  }
+}
