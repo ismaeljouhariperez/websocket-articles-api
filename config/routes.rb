@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, defaults: { format: :json }, controllers: {
+    sessions: 'users/sessions'
+  }
   resources :articles
   mount ActionCable.server => '/cable' # Pour WebSockets
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
